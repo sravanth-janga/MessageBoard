@@ -1,15 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MessageBoard</title>
-</head>
-<body>
-    <h1>HomePage 🏡</h1>
+{% extends 'base.html' %}
+{% block content %}
+    <div class="posts">
     {% for post in all_posts %}
-    <li>{{post.text}}</li>
+    
+    <div class="post-item">
+       
+       
+        <div class="post-title">
+            <a  href="{% url 'post_detail' post.id %}">
+                {{post.title}}
+            </a>
+           
+        </div>
+        <div class="post-body">
+            {{post.body}}
+        </div>
+       
+        <div class="author"> Author : {{post.author}}</div>
+    
+    </div>
+
     {% endfor%}
-</body>
-</html>
+</div>
+{% endblock content %}

@@ -1,0 +1,86 @@
+body{
+    background-color: rgb(53, 53, 59);
+}
+.nav{
+    display:flex;
+    column-gap: 60vw;
+    font-size: 2rem;
+    justify-content:space-evenly;
+    padding: 1rem; 
+    border: 2px solid rgb(32, 30, 30);
+    box-shadow: 2px 5px 5px rgb(125, 128, 127);
+}
+.nav-left, .nav-right{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(251, 251, 251);
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+.nav a{
+    color:inherit;
+}
+.nav-left:hover, .nav-right:hover{
+    transform: scale(1.1);
+    box-shadow: 2px 2px 2px 2px black;
+}
+
+.posts{
+    margin-top: 20px;
+    display: grid;
+    grid-auto-flow: row;
+}
+.post-item{
+    display: grid;
+    position: relative;
+    display: inherit;
+    row-gap: 0.9rem;
+    border-bottom: 2px solid rgb(19, 25, 47);
+    padding: 10px;
+}
+/* .post-item::after,.post-item::before{
+    content: '';
+    font-family:monospace;
+    color: inherit;
+    position: absolute;
+    color: powderblue;
+    width: 0%;
+    height: 0%;
+    bottom: 0;
+    transition: all 200ms ease-in-out;
+} */
+/* .post-item:hover::after{
+    content: 'Read More';
+    text-align:center;
+    font-size: 2rem;
+    left: 30%;
+    right: 30%;
+    bottom: 0%;
+    top: 40%;
+    width: 20%;
+} */
+/* .post-item:hover::before{
+    top:0;
+    bottom:0;
+    height: 100%;
+    width: 100%;
+    backdrop-filter: blur(10px);
+} */
+.post-title{
+    font-size: 1.3rem;
+    font-weight: bolder;
+    color: rgb(116, 116, 42);
+}
+.post-body{
+    font-size: 1.3rem;
+    font-weight: lighter;
+    color: rgb(74, 143, 185);
+}
+.author{
+    font-size: 0.8rem;
+    color: lavenderblush;
+    font-weight: bolder;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+a{
+    color: inherit;
+}
